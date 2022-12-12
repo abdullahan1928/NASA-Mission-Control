@@ -1,0 +1,26 @@
+{
+  "name": "nasa-mission-control",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "server": "npm run watch --prefix server",
+    "client": "npm start --prefix client",
+    "install": "npm install --prefix server && npm install --prefix client",
+    "install-server": "npm install --prefix server",
+    "install-client": "npm install --prefix client",
+    "uninstall": "npm uninstall --prefix server && npm uninstall --prefix client",
+    "uninstall-server": "npm uninstall --prefix server",
+    "uninstall-client": "npm uninstall --prefix client",
+    "test": "npm run test --prefix server && npm run test --prefix client",
+    "test-server": "npm run test --prefix server",
+    "test-client": "npm run test --prefix client"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "concurrently": "^7.6.0"
+  }
+}
